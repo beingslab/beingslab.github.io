@@ -1,9 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Sofia Pro'
+    /*font-family: 'Sofia Pro'*/
 }
 
+a:link {
+text-decoration: none;
+
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+
+}
+
+@font-face {
+font-family: 'Sofia Pro';
+src: url('../font/sofia-pro.woff') format('woff'), /* Modern Browsers */         
+}
 .nav {
     height: 84px;
     width: 95%;
@@ -54,23 +73,6 @@ margin: 0 auto;
     background-color: black;
     border-radius: 21px;
     margin-top: 41px;
-    text-align: center;
-    color: white;
-    line-height: 42px;
-    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition-duration: 0.2s;
-    -moz-transition-duration:0.2s;
-    -webkit-transition-duration:0.2s;
-    -o-transition-duration:0.2s;
-}
-.contant-btn:hover {
-    float: right;
-    width: 123px;
-    height: 42px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 21px;
-    margin-top: 21px;
     text-align: center;
     color: white;
     line-height: 42px;
