@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Pro'
+}
+
+.nav {
+    height: 84px;
+    width: 95%;
+    margin: 0 auto
+}
+
+.logo-outbox {
+    height: 82px;
+    float: left
+}
+
+.logo-innerbox {
+    width: 100%;
+    height: 30px;
+    margin-top: 26px
+}
+
+.logo-img {
+    display: block;
+}
+
+.cutline-box {
+    width: 41px;
+    height: 82px;
+    float: left
+}
+
+.cutline-img {
+    margin-left: 20px;
+    display: block;
+    margin-top: 35px
+}
+
+.lab-box {
+    display: inline-block;
+    width: 100px;
+    height: 82px;
+    float: left;
+    line-height: 82px;
+    color: #C1C1C1;
+}
+
+.contant-btn {
+    float: right;
+    width: 123px;
+    height: 42px;
+    background-color: black;
+    border-radius: 21px;
+    margin-top: 21px;
+    text-align: center;
+    color: white;
+    line-height: 42px;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition-duration: 0.2s;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+}
+.contant-btn:hover {
+    float: right;
+    width: 123px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 21px;
+    margin-top: 21px;
+    text-align: center;
+    color: white;
+    line-height: 42px;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition-duration: 0.2s;
+    -moz-transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -o-transition-duration:0.2s;
+}
+
+.container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+}
+
+.title-postion {
+    text-align: center;
+    height: 16px;
+}
+
+#title-delay {
+    display: none;
+    letter-spacing:8px;
+}
+
+.title-are {
+    margin-left: 24px;
+    letter-spacing:8px;
+}
+
+.poster-box {
+    margin-top: 80px;
+    height: 228px;
+}
+
+.poster-img {
+    width: 100%;
+    display: none;
+}
+
+.text-main {
+    line-height: 24px;
+    margin-top: 36px;
+    font-size: 14px;
+    text-align: justify;
+    display: none;
+}
+
+.footer {
+    margin-top: 50px;
+    bottom: 0px;
+    width: 100%;
+    height: 100px
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #8F8F8F;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+       display: none;
+    }
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px
+    }
+    .poster-img {
+        width: 100%;
+    }
+    .footer {
+
+        margin-top: 100px;
+        width: 100%;
+        height: 100px
+    }
+}

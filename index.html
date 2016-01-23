@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--seo 优化-->
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <meta name="author" content="author,email address">
+    <meta name="author" content="author,email address">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>beings</title>
+    <link type="text/css" rel="stylesheet" href="beingslab.css"/>
+    <script>
+
+        function checkBrowser(){
+            var browser={
+                versions:function(){
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
+                        //移动终端浏览器版本信息
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                    };
+                }(),
+                language:(navigator.browserLanguage || navigator.language).toLowerCase()
+            }
+            if( browser.versions.android || browser.versions.iPhone || browser.versions.iPad){
+
+                window.location.href="./moblie/index.html"
+
+
+            }
+        }
+        checkBrowser();
+
+
+
+    </script>
+</head>
+<body>
+<nav class="nav">
+    <div class="logo-outbox">
+        <div class="logo-innerbox">
+            <img class="logo-img" src="img/beingslogo.svg"/>
+        </div>
+    </div>
+    <div class="cutline-box">
+        <img class="cutline-img" src="img/Line.svg"/>
+    </div>
+
+    <div class="lab-box">laboratory</div>
+    <div class="contant-btn">
+        contact
+    </div>
+
+</nav>
+<div class="container">
+    <div class="title-postion">
+        <span id="title-delay">
+        WE<span class="title-are">ARE</span>
+        </span>
+    </div>
+    <div class="poster-box"><img class="poster-img" src="img/beings.svg"/></div>
+    <div class="text-main">
+        We, exist in this universe, that lonely is avoidless. It's nature, follow everyone's fate firmly.
+        Because of lonely, we got in touch with each other, connected with all things in the universe.Connection turns
+        into indispensable demands, and lonely drives you relate to beautiful things just like hunger makes you eat.
+        Overmuch hunger is not what we are chasing for eventually, so it's necessary to ameliorate the situation of
+        loneliness.<br><br>
+
+        Hope our products offer you "ameliorate the situation of loneliness".
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-text">© 2016 beings, Inc</div>
+</footer>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="beingslab.js"></script>
+</body>
+</html>
